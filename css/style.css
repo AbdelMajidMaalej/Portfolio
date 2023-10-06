@@ -20,7 +20,6 @@
 
 
 
-
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
@@ -88,7 +87,8 @@ audio:not([controls]) {
 	display: none;
 }
 .developer{
-	font-size: 1em;
+	font-size: 0.8em;
+	letter-spacing:0.05cm;
 }
 .fadeInDown{
 	font-size: 20px;
@@ -132,7 +132,6 @@ h2 {
 }
 h3 {
 	font-size:1.17em;
-	margin:1em 0;
 }
 h4 {
 	font-size:1em;
@@ -385,6 +384,7 @@ table {
 	content:'';
 }
 .title{
+	margin-top: 1.5em;
 	font-size: 1.5em;}
 	.subtitle{
 		font-size: 1em;
@@ -411,6 +411,11 @@ table {
 .icon-list {
 	float:right;
 	padding:2.5em 2em 0 6em;
+}
+.icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .icon-list a {
 	opacity:0;
@@ -555,7 +560,7 @@ table {
 	}
 }
 .scrollto {
-	padding: 150px 0px 0px 0px;
+	padding: 180px 0px 0px 0px;
 	display:block;
 	color:#FFF;
 	text-decoration:none;
@@ -593,6 +598,24 @@ h1.arrow span {
 {
 	width: 100%;
 	height: auto;
+}
+.ip{
+	background-color: #f3f5f8;
+	width: 100%;
+	height: auto;
+	align-self: center;
+}
+.video{
+	display: flex;
+	flex-direction: row;
+}
+
+.date{
+	font-weight: lighter;
+	display: flex;
+	font-size: 1em;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ justify-content: flex-end;
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
@@ -643,6 +666,19 @@ h1.arrow span {
 .services {
 	margin-top:80px;
 	margin-bottom:40px;
+	display: flex;
+}
+#projet {
+	margin-top:90px;
+	margin-bottom:90px;
+}
+#work {
+	margin-bottom:90px;
+}
+
+#service {
+	padding-bottom: 60px;
+	display: flex;
 }
 .services .icon {
 	position:relative;
@@ -668,6 +704,7 @@ h1.arrow span {
 .services .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
+	align-self: center;
 }
 .services .item:hover [class*=fa] {
 	-webkit-transform:scale(1.2);
